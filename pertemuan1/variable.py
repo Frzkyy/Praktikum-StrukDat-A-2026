@@ -49,4 +49,4 @@ print(f"Mas rusdi {rusdi}")
 print(f"Mas faiz {faiz}")
 print(f"Mas asep {asep}")
 
-# kalau ada 2 variabel, terus satunya integer (a) satunya string (b), itu kalau di print(a + b) tidak bisa, harus pakai print(a,b)
+# Kalau ada 2 variabel, terus satunya integer (a) satunya string (b), itu kalau di print(a + b) tidak bisa, harus pakai print(a,b)
