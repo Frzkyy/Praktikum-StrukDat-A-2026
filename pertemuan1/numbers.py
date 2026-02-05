@@ -14,4 +14,11 @@ print(f"{fltA} {type(fltA)}, {fltB} {type(fltB)}, {fltC} {type(fltC)}",end="\n\n
 cpxA = 2j
 cpxB = 2+4j
 cpxC = -10j
-print(f"{cpxA} {type(cpxA)}, {cpxB} {type(cpxB)}, {cpxC} {type(cpxC)}",end="\n\n")
+print(cpxA)
+print(cpxB)
+print(cpxC)
+
+
+
+
+print(f"\n{cpxA} {type(cpxA)}, {cpxB} {type(cpxB)}, {cpxC} {type(cpxC)}",end="\n\n")

@@ -1,7 +1,7 @@
 #String (str)
 x = "Said Fairuz Zacky"
 x = str("Said Fairuz Zacky")
-print(type(x))
+print(type(x),end="\n\n")
 
 #Integer (int)
 x = 12
@@ -11,7 +11,7 @@ print(type(x))
 #Float
 x = 3.14 
 x = float(3.14)
-print(type(x))
+print(f"\ntype(x)")
 
 #Complex
 x = 4j	
@@ -55,6 +55,8 @@ print(type(x))
 #Bytes
 x = b"Privyet"	
 x = bytes(5)
+
+
 print(type(x))
 
 #Bytearray

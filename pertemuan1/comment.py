@@ -2,10 +2,14 @@
 
 print("Hello, World") # ini juga comment
 
-#print("ini juga commen")
-print("Wleee") 
+#print("ini juga comment")
+print("test") 
+
 
 """
 Ini juga comment
-tapi bisa enter
+tapi multiline
 """
+
+
+

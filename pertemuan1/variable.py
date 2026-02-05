@@ -1,7 +1,8 @@
 # Variabel
-nama = "Budi" #String (str)
-umur = 30 #Integer (int)
-pi = 3.14 #float
+nama = "Budi" 
+umur = 30 
+pi = 3.14 
+print(nama)
 
 print(f"{nama} berumur {umur} tahun") 
 
@@ -38,15 +39,34 @@ ini variabel = "John" (jangan ada spasi diantara kita)
     ini_my_variabel_saya = "John"
 """
 # Assign banyak variable sekaligus
+
 siswa1, siswa2, siswa3 = 80, 70, 60
+
+
 print(f"siswa1 nilainya {siswa1}")
 print(f"siswa2 nilainya {siswa2}")
 print(f"siswa3 nilainya {siswa3}")
 
 # Assign banyak variable tapi satu value
-rusdi = faiz = asep = "bolos sekolah"
+
+rusdi = faiz = asep = 67
+
 print(f"Mas rusdi {rusdi}")
 print(f"Mas faiz {faiz}")
-print(f"Mas asep {asep}")
+print(f"Mas asep {asep}\n")
 
 # Kalau ada 2 variabel, terus satunya integer (a) satunya string (b), itu kalau di print(a + b) tidak bisa, harus pakai print(a,b)
+
+
+
+barang = ["ubi", "singkong", "gergaji"]
+x, y, z = barang
+
+x = "Halo"
+y = "Dunia"
+print(x + y)
+print(x,y)
+
+
+print(f"\n",y)
+print(z) 
