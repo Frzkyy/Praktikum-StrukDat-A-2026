@@ -12,22 +12,28 @@ def inputMataUang(ke):
         else:
             print("[ERROR] Mata uang tidak ada (EUR/IDR/SGD/USD/JPY)")
 
-def printUang(cr, uang):
-    nilai = f"{uang:,.2f}"
-    nilai = nilai.replace(",","]").replace(".",",").replace("]",".")
+def simbol(cr, nilai):
     match cr:
         case "EUR":
-            print(f"€{nilai}")
+            return(f"€{nilai}")
         case "IDR":
-            print(f"RP {nilai}")
+            return(f"RP {nilai}")
         case "USD":
-            print(f"${nilai}")
+            return(f"${nilai}")
         case "JPY":
-            print(f"¥{nilai}")
+            return(f"¥{nilai}")
         case "SGD":
-            print(f"${nilai}")
-            
-print(tabulate(kurs_table(), headers="keys", tablefmt="outline"))
+            return(f"${nilai}")
+
+
+def printUang(crA, uangA, crB, uangB):
+    nilaiA = f"{uangA:,.2f}"
+    nilaiA = nilaiA.replace(",","]").replace(".",",").replace("]",".")
+    nilaiB = f"{uangB:,.2f}"
+    nilaiB = nilaiB.replace(",","]").replace(".",",").replace("]",".")
+    print(f"{simbol(crA, nilaiA)} = {simbol(crB, nilaiB)}")
+
+print(tabulate(kurs_table(), headers="keys", tablefmt="outline"), end="\n\n")
 
 cr1 = inputMataUang("Dari")
 cr2 = inputMataUang("Ke")
@@ -39,5 +45,5 @@ while True:
         print("[ERROR] Hanya Bisa Angka")
     else:
         break
-
-printUang(cr2, convert(uangg,cr1,cr2))
+print()
+printUang(cr1, uangg, cr2, convert(uangg,cr1,cr2))
